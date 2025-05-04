@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# 🌾 Agri-Wisdom Chat
 
-## Project info
+**Agri-Wisdom Chat** is an AI-powered conversational assistant designed to support farmers, agricultural researchers, and enthusiasts with instant, reliable, and localized information. Whether you're managing crops, analyzing soil, or tracking weather patterns, Agri-Wisdom is here to help — 24/7.
 
-**URL**: https://lovable.dev/projects/4bf7a049-f477-408c-b4f1-38d09f77f8bc
+🔗 **Live Preview:** [Try it here](https://preview--agri-wisdom-chat.lovable.app/)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 💡 Features
 
-**Use Lovable**
+- 🌱 **Crop Advisory** – Get insights on crop rotation, pest control, and seasonal planting.
+- ☁️ **Weather Guidance** – Real-time, location-based weather insights for farming decisions.
+- 🧪 **Soil & Nutrient Suggestions** – Understand soil health and receive fertilizer recommendations.
+- 🧠 **Conversational AI** – Intuitive chat interface powered by natural language processing.
+- 🌐 **Multilingual Support** (Coming Soon) – Chat in local languages for regional accessibility.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4bf7a049-f477-408c-b4f1-38d09f77f8bc) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Tech Stack
 
-**Use your preferred IDE**
+- **Frontend:** React + Tailwind CSS  
+- **Backend:** Node.js / Express (or similar server)  
+- **AI/ML:** OpenAI GPT (or fine-tuned LLM)  
+- **Hosting:** Vercel or similar platform  
+- **Other Tools:** Webhooks, APIs for weather & agri-data (e.g., IMD, FAO, etc.)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📁 Folder Structure (Sample)
 
-Follow these steps:
+agri-wisdom-chat/
+├── public/
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── utils/
+│ └── App.jsx
+├── .env
+├── package.json
+└── README.md
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
 ```
+# Clone the repository
+git clone https://github.com/your-username/agri-wisdom-chat.git
 
-**Edit a file directly in GitHub**
+# Navigate into the project directory
+cd agri-wisdom-chat
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# Install dependencies
+npm install
 
-**Use GitHub Codespaces**
+# Start the development server
+npm run dev
+✨ Contributing
+I welcome contributions! If you’d like to improve features or fix bugs, please fork the repo and create a pull request.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+📜 License
+MIT License
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/4bf7a049-f477-408c-b4f1-38d09f77f8bc) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+📬 Contact
+For collaboration or questions, feel free to reach out:
+📧 aartipanchal539@gmail.com
