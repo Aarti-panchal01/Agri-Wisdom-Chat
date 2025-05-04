@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import AgriHeader from '@/components/AgriHeader';
 import ChatContainer, { Message } from '@/components/ChatContainer';
@@ -15,7 +14,12 @@ const Index = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [cropRecommendations, setCropRecommendations] = useState<string[]>([]);
   const [fertilizerRecommendations, setFertilizerRecommendations] = useState<string[]>([]);
-  const [weatherData, setWeatherData] = useState({ location: '', temperature: null, condition: 'unknown' as const, humidity: null });
+  const [weatherData, setWeatherData] = useState({ 
+    location: '', 
+    temperature: null as number | null, 
+    condition: 'unknown' as 'sunny' | 'cloudy' | 'rainy' | 'unknown', 
+    humidity: null as number | null 
+  });
   
   useEffect(() => {
     // Add the welcome message when the component mounts

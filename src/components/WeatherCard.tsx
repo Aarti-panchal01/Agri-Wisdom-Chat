@@ -5,9 +5,9 @@ import { Sun, CloudSun, CloudRain } from 'lucide-react';
 
 interface WeatherCardProps {
   location?: string;
-  temperature?: number;
+  temperature?: number | null;
   condition?: 'sunny' | 'cloudy' | 'rainy' | 'unknown';
-  humidity?: number;
+  humidity?: number | null;
 }
 
 const WeatherCard = ({ 
