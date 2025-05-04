@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Sun, CloudSun, CloudRain, HelpCircle } from 'lucide-react';
+import { Sun, CloudSun, CloudRain, HelpCircle, Droplets } from 'lucide-react';
 
 interface WeatherCardProps {
   location?: string;
@@ -31,7 +31,7 @@ const WeatherCard = ({
   };
 
   return (
-    <Card>
+    <Card className="h-full">
       <CardHeader className="pb-2">
         <CardTitle className="text-sm font-medium flex items-center justify-between">
           <span>Weather - {location}</span>
@@ -41,12 +41,12 @@ const WeatherCard = ({
       <CardContent>
         <div className="flex flex-col gap-2">
           {temperature !== null ? (
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
               <span className="text-muted-foreground">Temperature</span>
-              <span className="font-medium">{temperature}°C</span>
+              <span className="font-medium text-lg">{temperature}°C</span>
             </div>
           ) : (
-            <div className="text-muted-foreground text-sm">
+            <div className="text-muted-foreground text-sm py-2 bg-muted/30 rounded px-3">
               {location === 'Unknown' ? 
                 "Select a location to see weather data" : 
                 "Weather data not available"}
@@ -54,9 +54,18 @@ const WeatherCard = ({
           )}
           
           {humidity !== null && (
-            <div className="flex justify-between">
-              <span className="text-muted-foreground">Humidity</span>
+            <div className="flex justify-between items-center">
+              <span className="text-muted-foreground flex items-center">
+                <Droplets className="h-4 w-4 mr-1 text-blue-400" />
+                Humidity
+              </span>
               <span className="font-medium">{humidity}%</span>
+            </div>
+          )}
+          
+          {temperature !== null && (
+            <div className="mt-2 text-xs text-muted-foreground">
+              Last updated: {new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
             </div>
           )}
         </div>
