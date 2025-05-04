@@ -28,7 +28,7 @@
 
 ```
 # Clone the repository
-git clone https://github.com/your-username/agri-wisdom-chat.git
+git clone https://github.com/Aarti-panchal01/agri-wisdom-chat.git
 
 # Navigate into the project directory
 cd agri-wisdom-chat
