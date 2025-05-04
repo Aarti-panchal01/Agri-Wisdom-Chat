@@ -37,9 +37,11 @@ const RecommendationCard = ({
       </CardHeader>
       <CardContent>
         {recommendations.length > 0 ? (
-          <ul className="space-y-1 list-disc pl-5">
+          <ul className="space-y-2 list-disc pl-5">
             {recommendations.map((recommendation, index) => (
-              <li key={index}>{recommendation}</li>
+              <li key={index} className="text-sm break-words hyphens-auto pb-1">
+                {recommendation}
+              </li>
             ))}
           </ul>
         ) : (
