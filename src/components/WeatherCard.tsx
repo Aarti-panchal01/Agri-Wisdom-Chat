@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Sun, CloudSun, CloudRain } from 'lucide-react';
+import { Sun, CloudSun, CloudRain, HelpCircle } from 'lucide-react';
 
 interface WeatherCardProps {
   location?: string;
@@ -24,9 +24,9 @@ const WeatherCard = ({
       case 'cloudy':
         return <CloudSun className="h-8 w-8 text-gray-400" />;
       case 'rainy':
-        return <CloudRain className="h-8 w-8 text-agri-blue" />;
+        return <CloudRain className="h-8 w-8 text-blue-500" />;
       default:
-        return <Sun className="h-8 w-8 text-muted-foreground" />;
+        return <HelpCircle className="h-8 w-8 text-muted-foreground" />;
     }
   };
 
@@ -46,7 +46,11 @@ const WeatherCard = ({
               <span className="font-medium">{temperature}°C</span>
             </div>
           ) : (
-            <div className="text-muted-foreground text-sm">Weather data not available</div>
+            <div className="text-muted-foreground text-sm">
+              {location === 'Unknown' ? 
+                "Select a location to see weather data" : 
+                "Weather data not available"}
+            </div>
           )}
           
           {humidity !== null && (
