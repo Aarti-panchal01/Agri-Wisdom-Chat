@@ -24,22 +24,6 @@
 - **Hosting:** Vercel or similar platform  
 - **Other Tools:** Webhooks, APIs for weather & agri-data (e.g., IMD, FAO, etc.)
 
----
-
-## 📁 Folder Structure (Sample)
-
-agri-wisdom-chat/
-├── public/
-├── src/
-│ ├── components/
-│ ├── pages/
-│ ├── utils/
-│ └── App.jsx
-├── .env
-├── package.json
-└── README.md
----
-
 ## 🛠️ Getting Started
 
 ```
