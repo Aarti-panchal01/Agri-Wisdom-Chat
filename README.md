@@ -2,7 +2,7 @@
 
 **Agri-Wisdom Chat** is an AI-powered conversational assistant designed to support farmers, agricultural researchers, and enthusiasts with instant, reliable, and localized information. Whether you're managing crops, analyzing soil, or tracking weather patterns, Agri-Wisdom is here to help — 24/7.
 
-🔗 **Live Preview:** [Try it here](https://preview--agri-wisdom-chat.lovable.app/)
+🔗 **Live Preview:** [Try it here](https://agri-wisdom-chat.lovable.app/)
 
 ---
 
